@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "GestionAutos"
+    }
+  },
+  "defaultProject": "GestionAutos",
+  "cli": {
+    "analytics": "b5ce74e8-0639-4e24-8d15-4d9af9587a42"
+  }
 }
