@@ -25,7 +25,6 @@ export class AutosComponent implements OnInit, OnChanges {
       imagen: '../../../assets/images/imagen2.jpg'
     }
   ];
-  @Input() tittle: string;
   contador = 0;
   constructor() {
     console.log('1.Constructor');
