@@ -23,6 +23,22 @@ export class AutosComponent implements OnInit, OnChanges {
       modelo: 'Modelo Advance',
       nombre: 'Bentley',
       imagen: '../../../assets/images/imagen2.jpg'
+    },
+    {
+      año: 200,
+      descripcion: 'Es un auto veloz',
+      id: '3',
+      modelo: 'Modelo Advance',
+      nombre: 'Ferrary',
+      imagen: '../../../assets/images/imagen2.jpg'
+    },
+    {
+      año: 200,
+      descripcion: 'Es un auto veloz',
+      id: '4',
+      modelo: 'Modelo Advance',
+      nombre: 'Porch',
+      imagen: '../../../assets/images/imagen2.jpg'
     }
   ];
   contador = 0;
