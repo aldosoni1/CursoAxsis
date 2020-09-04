@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { NotFoundComponent } from './shared/components/not-found/not-found.component';
 import { LayoutComponent } from './layout/layout.component';
+import { LayoutAdminComponent } from './layout-admin/layout-admin.component';
 
 const routes: Routes = [
   {
@@ -28,12 +29,22 @@ const routes: Routes = [
     ]
   },
   {
-    path: 'demo',
-    loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule)
+    path: 'admin',
+    component: LayoutAdminComponent,
+    children: [
+      {
+        path: 'users',
+        loadChildren: () => import('./users/users.module').then(m => m.UsersModule)
+      },
+      {
+        path: '',
+        loadChildren: () => import('./home-admin/home-admin.module').then(m => m.HomeAdminModule)
+      }
+    ]
   },
   {
-    path: 'usuarios',
-    loadChildren: () => import('./users/users.module').then(m => m.UsersModule)
+    path: 'demo',
+    loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule)
   },
   {
     path: '**',
