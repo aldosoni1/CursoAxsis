@@ -3,6 +3,8 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { NotFoundComponent } from './shared/components/not-found/not-found.component';
 import { LayoutComponent } from './layout/layout.component';
 import { LayoutAdminComponent } from './layout-admin/layout-admin.component';
+import { AuthGuard } from '@shared/guards/auth.guard';
+import { LoginContainer } from './users/containers/login/login.container';
 
 const routes: Routes = [
   {
@@ -31,16 +33,25 @@ const routes: Routes = [
   {
     path: 'admin',
     component: LayoutAdminComponent,
+    canActivate: [AuthGuard],
     children: [
+      {
+        path: '',
+        loadChildren: () => import('./home-admin/home-admin.module').then(m => m.HomeAdminModule)
+      },
       {
         path: 'users',
         loadChildren: () => import('./users/users.module').then(m => m.UsersModule)
       },
       {
-        path: '',
-        loadChildren: () => import('./home-admin/home-admin.module').then(m => m.HomeAdminModule)
+        path: 'autos',
+        loadChildren: () => import('./autos/autos.module').then(m => m.AutosModule)
       }
     ]
+  },
+  {
+    path: 'auth',
+    loadChildren: () => import('./users/users.module').then(m => m.UsersModule)
   },
   {
     path: 'demo',

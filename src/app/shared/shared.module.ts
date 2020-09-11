@@ -28,7 +28,8 @@ import { SidebarAdminComponent } from './components/sidebar-admin/sidebar-admin.
     FooterComponent,
     HeaderAdminComponent,
     FooterAdminComponent,
-    SidebarAdminComponent
+    SidebarAdminComponent,
+    RouterModule
   ]
 })
 export class SharedModule { }
