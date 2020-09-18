@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 declare const $: any;
 declare interface RouteInfo {
@@ -19,10 +19,9 @@ export const ROUTES: RouteInfo[] = [
   styleUrls: ['./sidebar-admin.component.scss']
 })
 export class SidebarAdminComponent implements OnInit {
-
+  @Input() Username: string;
   menuItems: any[];
   constructor() { }
-
   ngOnInit(): void {
     this.menuItems = ROUTES.filter(menuItem => menuItem);
   }

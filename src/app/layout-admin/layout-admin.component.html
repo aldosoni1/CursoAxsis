@@ -5,7 +5,7 @@
     data-background-color="white"
     data-image="./assets/img/sidebar-1.jpg"
   >
-    <app-sidebar-admin></app-sidebar-admin>
+    <app-sidebar-admin [Username]="this.user.username"></app-sidebar-admin>
     <div
       class="sidebar-background"
       style="background-image: url(./assets/img/sidebar-4.jpg)"
@@ -42,9 +42,7 @@
         >
           <span aria-hidden="true">&times;</span>
         </button>
-        <h4 class="margin-top">
-          Free Version
-        </h4>
+        <h4 class="margin-top">Free Version</h4>
         <div class="separator"></div>
         <a
           href="https://www.creative-tim.com/product/material-dashboard"
@@ -57,9 +55,7 @@
             </div>
             Html5
             <div class="separator"></div>
-            <div class="product-type">
-              FREE
-            </div>
+            <div class="product-type">FREE</div>
           </div>
         </a>
         <a
@@ -73,14 +69,10 @@
             </div>
             Angular
             <div class="separator"></div>
-            <div class="product-type">
-              FREE
-            </div>
+            <div class="product-type">FREE</div>
           </div>
         </a>
-        <h4>
-          PRO Version
-        </h4>
+        <h4>PRO Version</h4>
         <div class="separator"></div>
         <a
           href="https://www.creative-tim.com/product/material-dashboard-pro"

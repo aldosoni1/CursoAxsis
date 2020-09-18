@@ -9,12 +9,12 @@ const routes: Routes = [
     component: AutosContainer
   },
   {
-    path: ':id',
-    component: AutoDetailComponent
-  },
-  {
     path: 'admin',
     component: AutosAdminContainer
+  },
+  {
+    path: ':id',
+    component: AutoDetailComponent
   }
 ];
 
