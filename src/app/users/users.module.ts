@@ -10,7 +10,12 @@ import { DevextremeModule } from '@devextreme';
 import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
-  declarations: [UserDetailComponent, UsersContainer, UserComponent, LoginContainer, LoginComponent],
+  declarations: [
+    UserDetailComponent, 
+    UsersContainer, 
+    UserComponent, 
+    LoginContainer, 
+    LoginComponent],
   imports: [
     CommonModule,
     UsersRoutingModule,

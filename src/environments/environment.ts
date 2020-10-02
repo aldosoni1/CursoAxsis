@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-  UrlApi: 'http://local.codemexico.mx:8081/GestionAutos/api/',
-  SECRET_KEY: 'test'
+  SECRET_KEY: 'test',
+  UrlApi: 'https://localhost:44345/api/'
 };

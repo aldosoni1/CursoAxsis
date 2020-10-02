@@ -1,1 +1,5 @@
-<p>marcas-admin works!</p>
+<button routerLink="registrar">Registrar marca</button>
+<h2 *ngFor="let marca of this.marcas">
+    <!-- {{marca.id}} -->
+    {{marca.nombre}}
+</h2>

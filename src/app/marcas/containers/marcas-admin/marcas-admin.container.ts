@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MarcaModel } from '@core/models/marca.model';
+import { MarcaService } from '@core/services/marca.service';
 
 @Component({
   selector: 'app-marcas-admin',
@@ -7,10 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 // tslint:disable-next-line: component-class-suffix
 export class MarcasAdminContainer implements OnInit {
-
-  constructor() { }
+  marcas: MarcaModel[];
+  constructor(
+    private marcaService: MarcaService
+  ) { }
 
   ngOnInit(): void {
+    this.marcaService.getAllMarcas().subscribe(x => {
+      this.marcas = x;
+    });
   }
 
 }

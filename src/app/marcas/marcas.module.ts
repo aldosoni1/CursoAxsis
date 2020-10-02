@@ -5,18 +5,25 @@ import { MarcaComponent } from './components/marca/marca.component';
 import { MarcasContainer } from './containers/marcas/marcas.container';
 import { MarcasRoutingModule } from './marcas-routing.module';
 import { MarcasAdminContainer } from './containers/marcas-admin/marcas-admin.container';
-
+import { RegistrarMarcaContainer } from './containers/registrar-marca/registrar-marca.container';
+import { RegistrarMarcaComponent } from './components/registrar-marca/registrar-marca.component';
+import { DevextremeModule } from '@devextreme';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     MarcaDetailComponent,
     MarcaComponent,
     MarcasContainer,
-    MarcasAdminContainer
+    MarcasAdminContainer,
+    RegistrarMarcaContainer,
+    RegistrarMarcaComponent
   ],
   imports: [
     CommonModule,
-    MarcasRoutingModule
+    MarcasRoutingModule,
+    DevextremeModule,
+    FormsModule
   ]
 })
 export class MarcasModule { }

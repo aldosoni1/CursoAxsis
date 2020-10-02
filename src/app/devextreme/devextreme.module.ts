@@ -7,7 +7,6 @@ import {
   DxSelectBoxModule,
   DxTextBoxModule
 } from 'devextreme-angular';
-import { from } from 'rxjs';
 
 
 @NgModule({
