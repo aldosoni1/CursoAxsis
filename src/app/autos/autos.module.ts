@@ -9,6 +9,7 @@ import { MaterialModule } from '../material/material.module';
 import { RegistrarAutoContainer } from './containers/registrar-auto/registrar-auto.container';
 import { RegistrarAutoComponent } from './components/registrar-auto/registrar-auto.component';
 import { AutosAdminContainer } from './containers/autos-admin/autos-admin.container';
+import { DevextremeModule } from '@devextreme';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AutosAdminContainer } from './containers/autos-admin/autos-admin.contai
     CommonModule,
     AutosRoutingModule,
     SharedModule,
-    MaterialModule
+    MaterialModule,
+    DevextremeModule
   ]
 })
 export class AutosModule { }

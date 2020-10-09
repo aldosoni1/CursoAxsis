@@ -4,7 +4,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserService } from './services/user.service';
 import { StorageService } from './services/storage.service';
 import { NotifyService } from './services/notify.service';
-import { MarcaService } from './services/marca.service';
+//import { MarcaService } from './services/marca.service';
+import { MarcaService } from './services/api.service';
+import { AutoService } from './services/api.service';
 @NgModule({
   declarations: [],
   imports: [
@@ -15,7 +17,8 @@ import { MarcaService } from './services/marca.service';
     UserService,
     StorageService,
     NotifyService,
-    MarcaService
+    MarcaService,
+    AutoService
   ]
 })
 export class CoreModule { }

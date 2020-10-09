@@ -1,1 +1,22 @@
-<p>registrar-auto works!</p>
+<div class="container">
+  <form (submit)="this.registrarAuto($event)">
+    <dx-form [(formData)]="autoInputModel">
+      <dxi-item
+        dataField="marcaId"
+        editorType="dxSelectBox"
+        [editorOptions]="{ items:this.marcasArray , displayExpr:'nombre',valueExpr:'id'}"
+      >
+        <dxo-label text="Marca"></dxo-label
+      ></dxi-item>
+      <dxi-item dataField="fechaEsamble" editorType="dxDateBox"></dxi-item>
+      <dxi-item dataField="precioMercado" editorType="dxNumberBox"></dxi-item>
+      <dxi-item dataField="nombre"></dxi-item>
+      <dxi-item dataField="numeroMotor"></dxi-item>
+      <dxi-item
+        itemType="button"
+        horizontalAlignment="right"
+        [buttonOptions]="{ text:'Registrar', useSubmitBehavior:true}"
+      ></dxi-item>
+    </dx-form>
+  </form>
+</div>
