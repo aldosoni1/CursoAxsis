@@ -1,2 +1,19 @@
-<input [(ngModel)]="this.marcaModel.nombre" />
-<button (click)="this.registrarMarcaClicked()">Enviar</button>
+<dx-text-box [(value)]="this.marcaModel.nombre">
+</dx-text-box>
+<div class="d-flex justify-content-end">
+  <button
+    class="mt-4"
+    mat-raised-button
+    color="warn"
+    (click)="this.registrarMarcaClicked()"
+  >
+    <mat-icon>keyboard_return</mat-icon>Regresar
+  </button>
+  <button
+    class="ml-2 mt-4"
+    mat-raised-button
+    (click)="this.registrarMarcaClicked()"
+  >
+    <mat-icon>verified_user</mat-icon>Registrar
+  </button>
+</div>

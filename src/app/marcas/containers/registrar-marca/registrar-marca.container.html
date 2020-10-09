@@ -1,4 +1,16 @@
-<app-registrar-marca
-  [marcaModel]="this.marcaModel"
-  (registrarMarcaClick)="this.registrarMarca()"
-></app-registrar-marca>
+<div class="card">
+  <div class="card-header card-header-success">
+    <h4 class="card-title">Registrar una marca</h4>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-12 justify-content-center">
+        <app-registrar-marca
+          [marcaModel]="this.marcaModel"
+          (registrarMarcaClick)="this.registrarMarca()"
+        ></app-registrar-marca>
+      </div>
+    </div>
+  </div>
+</div>
+

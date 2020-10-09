@@ -8,7 +8,10 @@ import { MarcasAdminContainer } from './containers/marcas-admin/marcas-admin.con
 import { RegistrarMarcaContainer } from './containers/registrar-marca/registrar-marca.container';
 import { RegistrarMarcaComponent } from './components/registrar-marca/registrar-marca.component';
 import { DevextremeModule } from '@devextreme';
+import { MaterialModule } from '@material';
 import { FormsModule } from '@angular/forms';
+import { EditarMarcaComponent } from './components/editar-marca/editar-marca.component';
+import { EditarMarcaContainer } from './containers/editar-marca/editar-marca.container';
 
 @NgModule({
   declarations: [
@@ -17,13 +20,17 @@ import { FormsModule } from '@angular/forms';
     MarcasContainer,
     MarcasAdminContainer,
     RegistrarMarcaContainer,
-    RegistrarMarcaComponent
+    RegistrarMarcaComponent,
+    EditarMarcaComponent,
+    EditarMarcaContainer
   ],
   imports: [
     CommonModule,
     MarcasRoutingModule,
     DevextremeModule,
-    FormsModule
+    FormsModule,
+    MaterialModule
   ]
 })
 export class MarcasModule { }
+

@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { MarcasContainer } from './containers/marcas/marcas.container';
 import { RegistrarMarcaContainer } from './containers/registrar-marca/registrar-marca.container';
 import { MarcasAdminContainer } from './containers/marcas-admin/marcas-admin.container';
+import { EditarMarcaContainer } from './containers/editar-marca/editar-marca.container';
 const routes: Routes = [
     {
         path: '',
@@ -15,6 +16,10 @@ const routes: Routes = [
     {
         path: 'admin/registrar',
         component: RegistrarMarcaContainer
+    },
+    {
+        path: 'admin/editar/:id',
+        component: EditarMarcaContainer
     }
 ];
 @NgModule({

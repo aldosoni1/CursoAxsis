@@ -5,7 +5,8 @@ import {
   DxDateBoxModule,
   DxTextAreaModule,
   DxSelectBoxModule,
-  DxTextBoxModule
+  DxTextBoxModule,
+  DxValidatorModule
 } from 'devextreme-angular';
 
 
@@ -17,14 +18,16 @@ import {
     DxDateBoxModule,
     DxTextAreaModule,
     DxSelectBoxModule,
-    DxTextBoxModule
+    DxTextBoxModule,
+    DxValidatorModule
   ],
   exports: [
     DxFormModule,
     DxDateBoxModule,
     DxTextAreaModule,
     DxSelectBoxModule,
-    DxTextBoxModule
+    DxTextBoxModule,
+    DxValidatorModule
 
   ]
 })

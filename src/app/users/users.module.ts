@@ -11,10 +11,10 @@ import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
-    UserDetailComponent, 
-    UsersContainer, 
-    UserComponent, 
-    LoginContainer, 
+    UserDetailComponent,
+    UsersContainer,
+    UserComponent,
+    LoginContainer,
     LoginComponent],
   imports: [
     CommonModule,
